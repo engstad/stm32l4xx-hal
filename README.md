@@ -8,29 +8,29 @@ _formerly [MabezDev/stm32l4xx-hal](https://github.com/mabezdev/stm32l4xx-hal)_
 
 The L4 product matrix:
 
-| Product Line | Flash (kB) | RAM (kB) | FSMC | OPAMPs | CAN | ΣΔ-s | ADCs | DACs | SAIs | USB OTG | USBD | LCD  | AES |
-| ------------ | ---------- | -------- | ---- | ------ | --- | ---- | ---- | ---- | ---- | ------- | ---- | ---- | --- |
-| stm32l4x6    |            |          |      |        |     |      |      |      |      |         |      |      |     |
-| STM32L4A6xx  | 1024       | 320      | Yes  | 2      | 2   | 8 ch | 3    | 2    | 2    | Yes     |      | 8x40 | Yes |
-| stm32l496xx  | 512-1024   | 320      | Yes  | 2      | 2   | 8 ch | 3    | 2    | 2    | Yes     |      | 8x40 |     |
-| STM32L486xx  | 1024       | 128      | Yes  | 2      | 1   | 8 ch | 3    | 2    | 2    | Yes     |      | 8x40 | Yes |
-| STM32L476xx  | 256-1024   | 128      | Yes  | 2      | 1   | 8 ch | 3    | 2    | 2    | Yes     |      | 8x40 |     |
-| stm32l4x5    |            |          |      |        |     |      |      |      |      |         |      |      |     |
-| STM32L475xx  | 256-1024   | 128      | Yes  | 2      | 1   | 8 ch | 3    | 2    | 2    | Yes     |      |      |     |
-| stm32l4x3    |            |          |      |        |     |      |      |      |      |         |      |      |     |
-| STM32L443xx  | 128- 256   | 64       |      | 1      | 1   |      | 1    | 2    | 1    |         | Yes  | 8x40 | Yes |
-| STM32L433xx  | 128- 256   | 64       |      | 1      | 1   |      | 1    | 2    | 1    |         | Yes  | 8x40 |     |
-| stm32l4x2    |            |          |      |        |     |      |      |      |      |         |      |      |     |
-| STM32L462xx  | 512        | 160      |      | 1      | 1   | 4 ch | 1    | 1    | 1    |         | Yes  |      | Yes |
-| STM32L452xx  | 256-512    | 160      |      | 1      | 1   | 4 ch | 1    | 1    | 1    |         | Yes  |      |     |
-| STM32L442xx  | 256        | 64       |      | 1      | 1   |      | 1    | 2    | 1    |         | Yes  |      | Yes |
-| stm32l432xx  | 128-256    | 64       |      | 1      | 1   |      | 1    | 2    | 1    |         | Yes  |      |     |
-| STM32L422xx  | 128        | 40       |      | 2      |     |      | 2    |      |      |         | Yes  |      | Yes |
-| STM32L412xx  | 64-128     | 40       |      | 1      |     |      | 2    |      |      |         | Yes  |      |     |
-| stm32l4x1    |            |          |      |        |     |      |      |      |      |         |      |      |     |
-| STM32L471xx  | 512-1024   | 128      | Yes  | 2      | 1   | 8 ch | 3    | 2    | 2    |         |      |      |     |
-| STM32L451xx  | 256- 512   | 160      |      | 1      | 1   | 4 ch | 1    | 1    | 1    |         |      |      |     |
-| STM32L431xx  | 128- 256   | 64       |      | 1      | 1   |      | 1    | 2    | 1    |         |      |      |     |
+| Product Line | Flash (kB) | RAM (kB) | FSMC | OP-amp | CAN | ΣΔ-s | ADC  | DAC  | SAI  | OTG | USBD | LCD  | AES |
+| ------------ | ------     | -------- | ---- | ---    | --- | ---- | ---- | ---- | ---- | --- | ---  | ---  | --- |
+| `stm32l4x6`  |            |          |      |        |     |      |      |      |      |     |      |      |     |
+| STM32L4A6xx  | 1024       | 320      | Yes  | 2      | 2   | 8 ch | 3    | 2    | 2    | Yes |      | 8x40 | Yes |
+| stm32l496xx  | 512-1024   | 320      | Yes  | 2      | 2   | 8 ch | 3    | 2    | 2    | Yes |      | 8x40 |     |
+| STM32L486xx  | 1024       | 128      | Yes  | 2      | 1   | 8 ch | 3    | 2    | 2    | Yes |      | 8x40 | Yes |
+| STM32L476xx  | 256-1024   | 128      | Yes  | 2      | 1   | 8 ch | 3    | 2    | 2    | Yes |      | 8x40 |     |
+| `stm32l4x5`  |            |          |      |        |     |      |      |      |      |     |      |      |     |
+| STM32L475xx  | 256-1024   | 128      | Yes  | 2      | 1   | 8 ch | 3    | 2    | 2    | Yes |      |      |     |
+| `stm32l4x3`  |            |          |      |        |     |      |      |      |      |     |      |      |     |
+| STM32L443xx  | 128-256    | 64       |      | 1      | 1   |      | 1    | 2    | 1    |     | Yes  | 8x40 | Yes |
+| STM32L433xx  | 128-256    | 64       |      | 1      | 1   |      | 1    | 2    | 1    |     | Yes  | 8x40 |     |
+| `stm32l4x2`  |            |          |      |        |     |      |      |      |      |     |      |      |     |
+| STM32L462xx  | 512        | 160      |      | 1      | 1   | 4 ch | 1    | 1    | 1    |     | Yes  |      | Yes |
+| STM32L452xx  | 256-512    | 160      |      | 1      | 1   | 4 ch | 1    | 1    | 1    |     | Yes  |      |     |
+| STM32L442xx  | 256        | 64       |      | 1      | 1   |      | 1    | 2    | 1    |     | Yes  |      | Yes |
+| stm32l432xx  | 128-256    | 64       |      | 1      | 1   |      | 1    | 2    | 1    |     | Yes  |      |     |
+| STM32L422xx  | 128        | 40       |      | 2      |     |      | 2    |      |      |     | Yes  |      | Yes |
+| STM32L412xx  | 64-128     | 40       |      | 1      |     |      | 2    |      |      |     | Yes  |      |     |
+| `stm32l4x1`  |            |          |      |        |     |      |      |      |      |     |      |      |     |
+| STM32L471xx  | 512-1024   | 128      | Yes  | 2      | 1   | 8 ch | 3    | 2    | 2    |     |      |      |     |
+| STM32L451xx  | 256- 512   | 160      |      | 1      | 1   | 4 ch | 1    | 1    | 1    |     |      |      |     |
+| STM32L431xx  | 128- 256   | 64       |      | 1      | 1   |      | 1    | 2    | 1    |     |      |      |     |
 
 Manuals:
     * [RM0351](https://www.st.com/resource/en/reference_manual/dm00083560-stm32l47xxx-stm32l48xxx-stm32l49xxx-and-stm32l4axxx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf): Covers STM32L47xxx/48xxx/49xxx/4Axxx.
