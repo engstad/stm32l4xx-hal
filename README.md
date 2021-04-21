@@ -51,16 +51,16 @@ The L4+ product matrix:
 | Product Line   | Flash (MB) | RAM (kB) | OP-AMP | CMP  | ΣΔ   | ADC  | TFT                | CGRC               | MIPI               | AES                |
 | ------------   | ---------- | -------- | ------ | ---- | ---- | ---- | ----               | ----               | ----               | ---                |
 | `stm32l4r9/s9` |            |          |        |      |      |      |                    |                    |                    |                    |
-| 4R9xx          | 1,2        | 640      | 2      | 2    | 8    | 1    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
+| 4R9xx          | 1, 2       | 640      | 2      | 2    | 8    | 1    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
 | 4S9xx          | 2          | 640      | 2      | 2    | 8    | 1    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | `stm32l4r7/s7` |            |          |        |      |      |      |                    |                    |                    |                    |
-| 4R7xx          | 1,2        | 640      | 2      | 2    | 8    | 1    | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
+| 4R7xx          | 1, 2       | 640      | 2      | 2    | 8    | 1    | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
 | 4S7xx          | 2          | 640      | 2      | 2    | 8    | 1    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |
 | `stm32l4r5/s5` |            |          |        |      |      |      |                    |                    |                    |                    |
-| 4R5xx          | 1,2        | 640      | 2      | 2    | 8    | 1    |                    |                    |                    |                    |
+| 4R5xx          | 1, 2       | 640      | 2      | 2    | 8    | 1    |                    |                    |                    |                    |
 | 4S5xx          | 2          | 640      | 2      | 2    | 8    | 1    |                    |                    |                    | :heavy_check_mark: |
 | `stm32l4p5/q5` |            |          |        |      |      |      |                    |                    |                    |                    |
-| 4P5xx          | 0.5,1      | 320      | 2      | 2    | 4    | 2    | :heavy_check_mark: |                    |                    |                    |
+| 4P5xx          | 0.5, 1     | 320      | 2      | 2    | 4    | 2    | :heavy_check_mark: |                    |                    |                    |
 | 4Q5xx          | 1          | 320      | 2      | 2    | 4    | 2    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
 
 All products support FSMC and USB OTG.
