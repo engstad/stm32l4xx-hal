@@ -8,8 +8,8 @@ _formerly [MabezDev/stm32l4xx-hal](https://github.com/mabezdev/stm32l4xx-hal)_
 
 The L4 product matrix:
 
-| Product Line | Flash (kB) | RAM (kB) | FSMC | OP-amp | CAN | ΣΔ-s | ADC  | DAC  | SAI  | USB  | LCD  | AES |
-| ------------ | ------     | -------- | ---- | ---    | --- | ---- | ---- | ---- | ---- | ---  | ---  | --- |
+| Product Line | Flash (kB) | RAM (kB) | FSMC | OP-amp | CAN | ΣΔ | ADC  | DAC  | SAI  | USB  | LCD  | AES |
+| ------------ | ------     | -------- | ---- | ---    | --- | --- | ---- | ---- | ---- | ---  | ---  | --- |
 | `stm32l4x6`  |            |          |      |        |     |      |      |      |      |      |      |     |
 | STM32L4A6xx  | 1024       | 320      | Yes  | 2      | 2   | 8    | 3    | 2    | 2    | OTG  | 8x40 | Yes |
 | STM32L496xx  | 512-1024   | 320      | Yes  | 2      | 2   | 8    | 3    | 2    | 2    | OTG  | 8x40 |     |
@@ -38,21 +38,22 @@ Manuals:
 
 The L4+ product matrix (not supported yet):
 
-| Product Line | Flash (kB) | RAM (kB) | FSMC | OPAMPs | CMPs | ΣΔ-s | ADCs | USB OTG | TFT  | CGRC | MIPI | AES |
-| ------------ | ---------- | -------- | ---- | ------ | ---- | ---- | ---- | ------- | ---- | ---- | ---- | --- |
-| stm32l4r9/s9 |            |          |      |        |      |      |      |         |      |      |      |     |
-| STM32L4R9xx  | 1024-2048  | 640      | Yes  | 2      | 2    | 8    | 1    | Yes     | Yes  | Yes  | Yes  |     |
-| STM32L4S9xx  | 2048       | 640      | Yes  | 2      | 2    | 8    | 1    | Yes     | Yes  | Yes  | Yes  | Yes |
-| stm32l4r7/s7 |            |          |      |        |      |      |      |         |      |      |      |     |
-| STM32L4R7xx  | 1024-2048  | 640      | Yes  | 2      | 2    | 8    | 1    | Yes     | Yes  | Yes  |      |     |
-| STM32L4S7xx  | 2048       | 640      | Yes  | 2      | 2    | 8    | 1    | Yes     | Yes  | Yes  |      | Yes |
-| stm32l4r5/s5 |            |          |      |        |      |      |      |         |      |      |      |     |
-| STM32L4R5xx  | 1024-2048  | 640      | Yes  | 2      | 2    | 8    | 1    | Yes     |      |      |      |     |
-| STM32L4S5xx  | 2048       | 640      | Yes  | 2      | 2    | 8    | 1    | Yes     |      |      |      | Yes |
-| stm32l4p5/q5 |            |          |      |        |      |      |      |         |      |      |      |     |
-| STM32L4P5xx  | 512-1024   | 320      | Yes  | 2      | 2    | 4    | 2    | Yes     | Yes  |      |      |     |
-| STM32L4Q5xx  | 1024       | 320      | Yes  | 2      | 2    | 4    | 2    | Yes     | Yes  |      |      | Yes |
-| ------------ | ---------- | -------- | ---- | ------ | ---- | ---- | ---- | ------- | ---- | ---- | ---- | --- |
+| Product Line   | Flash (kB) | RAM (kB) | OP-AMP | CMP  | ΣΔ   | ADC  | TFT  | CGRC | MIPI | AES |
+| ------------   | ---------- | -------- | ------ | ---- | ---- | ---- | ---- | ---- | ---- | --- |
+| `stm32l4r9/s9` |            |          |        |      |      |      |      |      |      |     |
+| STM32L4R9xx    | 1024-2048  | 640      | 2      | 2    | 8    | 1    | Yes  | Yes  | Yes  |     |
+| STM32L4S9xx    | 2048       | 640      | 2      | 2    | 8    | 1    | Yes  | Yes  | Yes  | Yes |
+| `stm32l4r7/s7` |            |          |        |      |      |      |      |      |      |     |
+| STM32L4R7xx    | 1024-2048  | 640      | 2      | 2    | 8    | 1    | Yes  | Yes  |      |     |
+| STM32L4S7xx    | 2048       | 640      | 2      | 2    | 8    | 1    | Yes  | Yes  |      | Yes |
+| `stm32l4r5/s5` |            |          |        |      |      |      |      |      |      |     |
+| STM32L4R5xx    | 1024-2048  | 640      | 2      | 2    | 8    | 1    |      |      |      |     |
+| STM32L4S5xx    | 2048       | 640      | 2      | 2    | 8    | 1    |      |      |      | Yes |
+| `stm32l4p5/q5` |            |          |        |      |      |      |      |      |      |     |
+| STM32L4P5xx    | 512-1024   | 320      | 2      | 2    | 4    | 2    | Yes  |      |      |     |
+| STM32L4Q5xx    | 1024       | 320      | 2      | 2    | 4    | 2    | Yes  |      |      | Yes |
+
+All products support FSMC and USB OTG.
 
 Manuals:
     * [RM0432](https://www.st.com/resource/en/reference_manual/dm00310109-stm32l4-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf): All L4+ products.
